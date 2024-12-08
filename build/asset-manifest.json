@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WebTurbidity/static/css/main.e6c13ad2.css",
+    "main.js": "/WebTurbidity/static/js/main.b7b406b1.js",
+    "static/js/453.136314d7.chunk.js": "/WebTurbidity/static/js/453.136314d7.chunk.js",
+    "index.html": "/WebTurbidity/index.html",
+    "main.e6c13ad2.css.map": "/WebTurbidity/static/css/main.e6c13ad2.css.map",
+    "main.b7b406b1.js.map": "/WebTurbidity/static/js/main.b7b406b1.js.map",
+    "453.136314d7.chunk.js.map": "/WebTurbidity/static/js/453.136314d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.b7b406b1.js"
+  ]
+}

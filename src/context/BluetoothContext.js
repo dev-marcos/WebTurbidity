@@ -12,11 +12,20 @@ export const BluetoothProvider = ({ children }) => {
   const [server, setServer] = useState(null);
   const [characteristic, setCharacteristic] = useState(null);
 
+
+  //Define BLE Device Specs
+  var deviceName ='ESP32';
+  var bleService = '19b10000-e8f2-537e-4f6c-d104768a1214';
+  var ledCharacteristic = '19b10002-e8f2-537e-4f6c-d104768a1214';
+  var sensorCharacteristic= '19b10001-e8f2-537e-4f6c-d104768a1214';
+
+
+
   const connectToDevice = async () => {
     try {
       const device = await navigator.bluetooth.requestDevice({
-        filters: [{ services: ['battery_service'] }], // Substituir pelo serviço do ESP32
-        optionalServices: ['generic_access']
+        filters: [{name: deviceName}],
+            optionalServices: [bleService]
       });
 
       const server = await device.gatt.connect();
